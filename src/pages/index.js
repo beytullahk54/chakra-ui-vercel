@@ -4,7 +4,7 @@ import DashboardCard from "../components/DashboardCard";
 export default function Home() {
   return (
     <Box p={6}>
-      <Heading mb={6}>Dashboard</Heading>
+      <Heading mb={6}>Anasayfa</Heading>
       
       <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={6}>
         <DashboardCard 

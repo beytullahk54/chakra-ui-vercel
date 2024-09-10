@@ -58,28 +58,28 @@ import {
   
     return (
       <Box p={6}>
-        <Heading mb={6}>Destek Talepleri</Heading>
+        <Heading mb={6}>Projeler</Heading>
   
         <Button colorScheme="blue" onClick={onOpen} mb={6}>
-          Yeni Talep Ekle
+          Yeni Proje Ekle
         </Button>
   
         {/* Modal */}
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>{editingUserIndex !== null ? "Talep Güncelle" : "Yeni Talep Ekle"}</ModalHeader>
+            <ModalHeader>{editingUserIndex !== null ? "Proje Güncelle" : "Yeni Proje Ekle"}</ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <UserForm
                 onSubmit={editingUserIndex !== null ? updateUser : addUser}
                 initialData={editingUserIndex !== null ? users[editingUserIndex] : null}
-                buttonText={editingUserIndex !== null ? "Update User" : "Add User"}
+                buttonText={editingUserIndex !== null ? "Proje Güncelle" : "Proje Ekle"}
               />
             </ModalBody>
             <ModalFooter>
               <Button colorScheme="red" onClick={onClose}>
-                Close
+                Kapat
               </Button>
             </ModalFooter>
           </ModalContent>
@@ -108,14 +108,14 @@ import {
                     colorScheme="yellow"
                     onClick={() => editUser(index)}
                   >
-                    Edit
+                    Güncelle
                   </Button>
                   <Button
                     size="sm"
                     colorScheme="red"
                     onClick={() => deleteUser(index)}
                   >
-                    Delete
+                    Sil
                   </Button>
                 </Td>
               </Tr>

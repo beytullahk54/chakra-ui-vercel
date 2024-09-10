@@ -48,7 +48,7 @@ import {
                     Anasayfa
                   </Button>
                 </Link>
-                <Link href="/notifications" passHref>
+                <Link href="/destek" passHref>
                   <Button
                     leftIcon={<FiBell />}
                     w="full"
@@ -59,7 +59,7 @@ import {
                     Destek Talepleri
                   </Button>
                 </Link>
-                <Link href="/settings" passHref>
+                <Link href="/projeler" passHref>
                   <Button
                     leftIcon={<FiSettings />}
                     w="full"
@@ -112,7 +112,7 @@ import {
                 Anasayfa
               </Button>
             </Link>
-            <Link href="/notifications" passHref>
+            <Link href="/destek" passHref>
               <Button
                 leftIcon={<FiBell />}
                 w="full"
@@ -124,7 +124,7 @@ import {
                 Destek Talepleri
               </Button>
             </Link>
-            <Link href="/settings" passHref>
+            <Link href="/projeler" passHref>
               <Button
                 leftIcon={<FiSettings />}
                 w="full"
